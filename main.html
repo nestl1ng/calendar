@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Calendar</title>
+    <link rel="stylesheet" type="text/css" href="main.css" />
+  </head>
+
+  <body>
+    <div id="calendar">
+      <div class="month">
+        <ul>
+          <li id="prev2">&#10094;</li>
+          <li id="prev">&#10094;</li>
+          <li id="month"></li>
+          <li id="year"></li>
+          <li id="next">&#10095;</li>
+          <li id="next2">&#10095;</li>
+        </ul>
+      </div>
+
+      <ul id="weekdays">
+        <li>Пн</li>
+        <li>Вт</li>
+        <li>Ср</li>
+        <li>Чт</li>
+        <li>Пт</li>
+        <li>Сб</li>
+        <li>Вс</li>
+      </ul>
+
+      <ul id="days"></ul>
+      <ul id="months"></ul>
+
+      <!-- <div>You have clicked on: <span id="select"></span></div> -->
+    </div>
+    <script src="holidays.js"></script>
+    <script src="main.js"></script>
+    <script>
+      require("./render.js");
+    </script>
+  </body>
+</html>
